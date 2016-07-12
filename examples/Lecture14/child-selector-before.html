@@ -6,14 +6,29 @@
 <style>
 
 /* any article element which is a direct child of a section element,i.e., any article element whose immediate parent is a section element. */
-xxx {
-  color: green;
-  font-size: 24px;
-}
 
 /* any h2 element which is a direct child of a section element,i.e., any h2 element whose immediate parent is a section element. */
-xxx {
-  color: green;
+section > h2 {
+  display: block;	
+  padding-left: 5px;
+  background-color: grey;
+  color: black;
+  font-variant: small-caps;
+
+}
+
+section table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 200px;
+}
+
+section table th {
+	background-color: grey;
+}
+
+section table tr:nth-child(even){
+	background-color: #f0f0f0;
 }
 
 
@@ -28,9 +43,32 @@ xxx {
   </div>
 </section>
 <section>
-  <article>ARTICLE as a direct child of the SECTION element.</article>
+  <h2>Subheading 2</h2>
+  <article>
+  	ARTICLE as a direct child of the SECTION element.
+
+  	<table>
+  		<tr>
+  			<th>Welcome</th>
+  			<th>Ending</th>
+  		</tr>
+  		<tr>
+  			<td>Hello</td>
+  			<td>Bye</td>
+  		</tr>
+  		<tr>
+  			<td>Hi</td>
+  			<td>Cya</td>
+  		</tr>
+  		<tr>
+  			<td>Whats up</td>
+  			<td>Goodbye</td>
+  		</tr>
+  	</table>
+
+  </article>
 </section>
-<h2>Subheading 2</h2>
+
 
 </body>
 </html>
